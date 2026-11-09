@@ -147,3 +147,51 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+
+# ====================================================================
+# CUSTOM ADDITIONS FOR AI ENGINEER BATCH (Python, Flask, ML, DevOps)
+# ====================================================================
+
+# Python Caches & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter Notebook Checkpoints & Data
+.ipynb_checkpoints
+*.csv
+*.xlsx
+*.json
+!*.py     # Never ignore your python source scripts
+!*.ipynb  # Never ignore your notebooks
+
+# Flask Settings & Private API Keys (CRITICAL for OpenAI)
+.flaskenv
+instance/
+config.py
+# Note: GitHub's template already ignores .env, but keeping this block secure is vital.
+
+# Databases (MySQL, SQLite)
+*.sql
+*.sqlite
+*.db
+
+# Trained ML Models & Weights (TensorFlow / XGBoost)
+# Prevents uploading heavy files (>100MB) which crash Git commits
+*.h5
+*.keras
+*.pkl
+*.pickle
+*.pb
+checkpoint
+*.model
+
+# DevOps & MLOps (Docker & Kubernetes)
+.docker/
+.kubernetes/
